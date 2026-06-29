@@ -317,21 +317,25 @@ Ensure the following are installed:
 - Visual Studio 2022 or Visual Studio Code with the C# Dev Kit
 - Git
 
-# Configuration
+## Configuration
 
-Before running the application, you must configure the Anthropic Claude API key.
+Before running the application, you must configure an Anthropic Claude API key.
 
-Generate an API key from your Anthropic account.
-Open the backend project's appsettings.json file.
-Add your API key to the appropriate configuration setting, for example:
+1. Generate an API key from the Anthropic Console.
+2. Open `backend/EquiTie.Api/appsettings.json`.
+3. Add your API key to the `Anthropic` configuration section:
+
+```json
 {
   "Anthropic": {
     "ApiKey": "YOUR_CLAUDE_API_KEY"
   }
 }
+```
 
-Note: The application requires a valid Claude API key to generate AI responses. Without this configuration, the AI assistant will not function correctly.
----
+> **Important**
+>
+> A valid Claude API key is required for the AI assistant to generate responses. Without it, the backend will start successfully, but AI-powered features will not function.---
 
 ## Backend (.NET 8)
 
