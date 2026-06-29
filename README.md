@@ -317,6 +317,20 @@ Ensure the following are installed:
 - Visual Studio 2022 or Visual Studio Code with the C# Dev Kit
 - Git
 
+# Configuration
+
+Before running the application, you must configure the Anthropic Claude API key.
+
+Generate an API key from your Anthropic account.
+Open the backend project's appsettings.json file.
+Add your API key to the appropriate configuration setting, for example:
+{
+  "Anthropic": {
+    "ApiKey": "YOUR_CLAUDE_API_KEY"
+  }
+}
+
+Note: The application requires a valid Claude API key to generate AI responses. Without this configuration, the AI assistant will not function correctly.
 ---
 
 ## Backend (.NET 8)
